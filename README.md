@@ -22,6 +22,29 @@ Re-iteration of or [DoggoDisplay01](https://github.com/mittons/DoggoDisplay01). 
 
 ~~***Dec 18;~~ Fifth ~~commit:~~** I have no idea. I tried changing the paths a bit again. And I have literally copy pasted the directory structure names directly into the GitHub Actions file from the actual directory system to ensure there are no typos. Yet. No awail. I added a slash after '--driver=' and '--target=' in the flutter integration test part of the gh actions script (switch from relative pathing to abs pathing.. I think?). If that doesn't work I will abandon this project now and seek solutions later, when I have time. The latest one works, so thankfully there is that: [Dec 17 project](https://mittons.github.io/DoggoDec17/)
 
+
+
+*7th commit:* **OK** ***SO*** **I didn't write anything into this readme for the sixth commit** *because it was kind of sort of a hail mary* ~~***But***~~ *since* ~~**it**~~ ***WORKED*** I will add this seventh commit.
+
+So the --driver=test_driver/integration_test.dart didnt work for some reason? It tried to reference test_driver/main_test.dart. I do not know why but I am determined to find out (at a later date).
+
+In the fifth commit i tried to add a slash for absolute pathing. ~~driver=~~**/**~~test_driver/integration_test.dart~~.
+This did not work.
+
+In the sixth commit.. I added a dot; In front of the slash I added in the fifth commit. For relative pathing again.
+
+**driver=**~~./~~***test_driver/integration_test.dart***.
+
+That worked.
+
+I bet just changing this readme file for a seventh commit is gonna break the build again.
+
+But then again README.md files aren't meant for reflecting everything that comes to mind.
+
+Thankfully I have the latest, more production~y version, the [Dec 17 project](https://mittons.github.io/DoggoDec17/) up with a relatively clean README. More user-facing, gracious.. and friendly =^.^=.
+
+What the hell is this.
+
 Uses [MockDogApiDec16](https://github.com/mittons/MockDogApi16) as a mock api image for testing.
 
 ## Started On:
