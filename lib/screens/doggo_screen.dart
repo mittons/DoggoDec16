@@ -63,7 +63,8 @@ class _DoggoScreenState extends State<DoggoScreen> {
   }
 
   Widget _buildDoggoDiversityList() {
-    return ListView.builder(itemBuilder: _doggoBreedItemBuilder);
+    return ListView.builder(
+        itemBuilder: _doggoBreedItemBuilder, itemCount: doggoBreeds.length);
   }
 
   Card _doggoBreedItemBuilder(context, index) {
