@@ -55,10 +55,10 @@ jobs:
         run: |
           chromedriver --port=4444 --trace-buffer-size=100000 &
           flutter drive \
-            --verbose-system-logs
+            --verbose-system-logs \
             -d web-server \
-            --driver=test_driver/integration_test.dart \
-            --target=integration_test/app_test.dart \
+            --driver=/test_driver/integration_test.dart \
+            --target=/integration_test/app_test.dart \
             --dart-define=CI=true
 
       - name: Build Flutter Web
