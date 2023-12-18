@@ -14,7 +14,11 @@ Re-iteration of or [DoggoDisplay01](https://github.com/mittons/DoggoDisplay01). 
 
 :fingers_crossed:
 
-***Tertiary note dec18 third commit.. pushing two ghcr images and 4 projects within the span of 15 minutes.. then debugging the 2 projects that failed and successfully resolving them within 30~ish minutes is hecking fun. [3 Screen-screenshot](https://i.imgur.com/DZ26QZi.png) just after I created the 4 repositories. Multitasking triggers all the chemicals. I love programming.***
+***Tertiary note dec18 third commit.. pushing two ghcr images and 4 projects within the span of 15 minutes.. then debugging the 2 projects that failed and successfully resolving them within 30~ish minutes is hecking fun. [3 Screen-screenshot](https://i.imgur.com/DZ26QZi.png) just after I created the 4 repositories at like.. 23:46+. Multitasking triggers all the chemicals. I love programming.***
+
+
+
+~~***Dec 18. Fourth commit.***~~ I don't even. This project has no reference to [test_driver/main_test.dart](https://imgur.com/a/C8IeiuN).. as far as I know. Lets try again. [But the Dec17 project (Second commit) is up, running and going good. Hooray for that! \o/](https://mittons.github.io/DoggoDec17/).
 
 Uses [MockDogApiDec16](https://github.com/mittons/MockDogApi16) as a mock api image for testing.
 
