@@ -54,8 +54,8 @@ void main() {
       }
 
       // Press button
-      await widgetTester.tap(
-          find.widgetWithText(ElevatedButton, "Get List of Doggo Diversity!"));
+      await widgetTester.tap(find.widgetWithText(
+          ElevatedButton, "Show doggo diversity list! \\o/"));
       await widgetTester.pumpAndSettle();
 
       // ----------------------------------------------------------------------
