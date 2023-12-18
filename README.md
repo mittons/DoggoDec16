@@ -18,9 +18,9 @@ Re-iteration of or [DoggoDisplay01](https://github.com/mittons/DoggoDisplay01). 
 
 
 
-~~***Dec 18. Fourth commit.***~~ I don't even. This project has no reference to [test_driver/main_test.dart](https://imgur.com/a/C8IeiuN).. as far as I know. Lets try again. [But the Dec17 project (Second commit) is up, running and going good. Hooray for that! \o/](https://mittons.github.io/DoggoDec17/).
+~~***Dec 18. Fourth commit.***~~ I don't even. This project has no reference to [test_driver/main_test.dart](https://imgur.com/a/C8IeiuN).. as far as I know. Lets try again. [But the Dec17 project (Second commit) is up, running and going good. Hooray for that! \o/](https://github.com/mittons/doggoDec17).
 
-~~***Dec 18;~~ Fifth ~~commit:~~** I have no idea. I tried changing the paths a bit again. And I have literally copy pasted the directory structure names directly into the GitHub Actions file from the actual directory system to ensure there are no typos. Yet. No awail. I added a slash after '--driver=' and '--target=' in the flutter integration test part of the gh actions script (switch from relative pathing to abs pathing.. I think?). If that doesn't work I will abandon this project now and seek solutions later, when I have time. The latest one works, so thankfully there is that: [Dec 17 project](https://mittons.github.io/DoggoDec17/)
+~~***Dec 18;~~ Fifth ~~commit:~~** I have no idea. I tried changing the paths a bit again. And I have literally copy pasted the directory structure names directly into the GitHub Actions file from the actual directory system to ensure there are no typos. Yet. No awail. I added a slash after '--driver=' and '--target=' in the flutter integration test part of the gh actions script (switch from relative pathing to abs pathing.. I think?). If that doesn't work I will abandon this project now and seek solutions later, when I have time. The latest one works, so thankfully there is that: [Dec 17 project](https://github.com/mittons/doggoDec17)
 
 
 
@@ -41,9 +41,13 @@ I bet just changing this readme file for a seventh commit is gonna break the bui
 
 But then again README.md files aren't meant for reflecting everything that comes to mind.
 
-Thankfully I have the latest, more production~y version, the [Dec 17 project](https://mittons.github.io/DoggoDec17/) up with a relatively clean README. More user-facing, gracious.. and friendly =^.^=.
+Thankfully I have the latest, more production~y version, the [Dec 17 project](https://github.com/mittons/doggoDec17) up with a relatively clean README. More user-facing, gracious.. and friendly =^.^=.
 
 What the hell is this.
+
+But at least I wrote this ***~~Sev~~e****n~~th~~** commit log for documentation, logging, paper-trailing and transparency.
+
+Also. 7 ate~~(-th commit)~~ nine: Fixed links to Dec17 project in this file.
 
 Uses [MockDogApiDec16](https://github.com/mittons/MockDogApi16) as a mock api image for testing.
 
@@ -54,4 +58,4 @@ Uses [MockDogApiDec16](https://github.com/mittons/MockDogApi16) as a mock api im
 Fun project. Lots of dopamine from from validating my recent learning experiences. I'm getting more flexible with my coding and what I am expressing with the code now. Less of a stick up my
 
 ## Notable (Milestone) Resources Created:
-- Confidence
+- ***Confidence***
