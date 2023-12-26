@@ -16,6 +16,7 @@ class DoggoScreen extends StatefulWidget {
 class _DoggoScreenState extends State<DoggoScreen> {
   bool dogsLoaded = false;
   late List<DoggoBreed> doggoBreeds;
+  bool isLoadingInitialList = false;
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,8 @@ class _DoggoScreenState extends State<DoggoScreen> {
       body: Column(
         children: [
           _buildButtonContainer(),
+          if (isLoadingInitialList)
+            const Center(child: CircularProgressIndicator()),
           if (dogsLoaded) Expanded(child: _buildDoggoDiversityList())
         ],
       ),
@@ -42,6 +45,12 @@ class _DoggoScreenState extends State<DoggoScreen> {
   }
 
   Future<void> _handleButtonPressed() async {
+    if (dogsLoaded != true && isLoadingInitialList != true) {
+      setState(() {
+        isLoadingInitialList = true;
+      });
+    }
+
     // Attempt to get data from doggo service (await)
     ServiceResult doggoDiversityResult =
         await widget.doggoService.getDoggoDiversityData();
@@ -51,6 +60,12 @@ class _DoggoScreenState extends State<DoggoScreen> {
 
     // Lets check if the attempt was successful.. if it wasnt lets go for graceful UX.. snackbar yum. And return.
     if (doggoDiversityResult.success != true) {
+      if (isLoadingInitialList == true) {
+        setState(() {
+          isLoadingInitialList = false;
+        });
+      }
+
       UiHelper.displaySnackbar(context,
           "There was an error loading the diverse doggo data. Please try again later.");
     }
@@ -59,6 +74,7 @@ class _DoggoScreenState extends State<DoggoScreen> {
     setState(() {
       dogsLoaded = true;
       doggoBreeds = doggoDiversityResult.data!;
+      isLoadingInitialList = false;
     });
   }
 

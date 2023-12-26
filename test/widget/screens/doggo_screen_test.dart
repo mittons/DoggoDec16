@@ -38,29 +38,39 @@ void main() {
       await widgetTester.pumpAndSettle();
 
       // Perform tests
-
       // ----------------------------------------------------------------------
       // | Gather data that expresses the state change we expect
       // ----------------------------------------------------------------------
       List<DoggoBreed> mockDogBreeds =
-          (await mockDoggoService.getDoggoDiversityData()).data!;
+          mockDoggoService.getDoggoDiversityDataSync().data!;
 
       // ----------------------------------------------------------------------
       // | Expect list not being displayed before button is pressed
+      // |   nor the progress indicator
       // ----------------------------------------------------------------------
 
       for (DoggoBreed mockDogBreed in mockDogBreeds) {
         expect(find.widgetWithText(ListTile, mockDogBreed.name), findsNothing);
       }
+      expect(find.byType(CircularProgressIndicator), findsNothing);
 
       // Press button
       await widgetTester.tap(find.widgetWithText(
           ElevatedButton, "Show doggo diversity list! \\o/"));
+      await widgetTester.pump(const Duration(milliseconds: 100));
+
+      // ----------------------------------------------------------------------
+      // | Expect progress indicator to be displayed immediately after b.press
+      // ----------------------------------------------------------------------
+      expect(find.byType(CircularProgressIndicator), findsOneWidget);
+
       await widgetTester.pumpAndSettle();
 
       // ----------------------------------------------------------------------
-      // | Expect list to be displayed after button press
-      // ----------------------------------------------------------------------
+      // | Expect list to be displayed shortly after button press
+      // |   and progress indicator to be gone
+      // ---------------------------------------------------------------------
+      expect(find.byType(CircularProgressIndicator), findsNothing);
 
       for (DoggoBreed mockDogBreed in mockDogBreeds) {
         expect(
